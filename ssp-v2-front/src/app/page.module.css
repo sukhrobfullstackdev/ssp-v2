@@ -1,0 +1,55 @@
+.root {
+    background-image: url("/login_bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    padding: 20px 60px;
+}
+
+.items {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.item {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #816132;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 120px;
+    height: 80vh;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: rgb(213, 213, 213) -2px -2px 100px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.72);
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-height: 400px;
+    min-width: 400px;
+}
