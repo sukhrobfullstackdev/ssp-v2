@@ -1,9 +1,10 @@
 "use client";
+import React from "react";
 import styles from "@/app/page.module.css";
 import usePage from "./usePage";
 import {Button, Checkbox, Form, type FormProps, Input} from 'antd';
-import {Divider} from "antd";
-
+import Image from 'next/image';
+import logo from "../../public/login_logo.png";
 type FieldType = {
     username?: string;
     password?: string;
@@ -20,7 +21,17 @@ const Page = () => {
                 </ul>
             </div>
             <main className={styles.main}>
-                <div>nchwe</div>
+                <div className={styles.imgContent} style={{ display: 'flex', flexDirection: 'column' }}>
+                    <Image
+                        src={logo}
+                        sizes="70vw"
+                        style={{
+                            width: '100%',
+                            height: 'auto',
+                        }}
+                        alt="Picture of the author"
+                    />
+                </div>
                 <div className={styles.form}>
                     <div className={styles.formContent}>
                         <h2 style={{textAlign: 'center'}}>Tizimga kirish</h2>
@@ -55,9 +66,9 @@ const Page = () => {
                             >
                                 <Checkbox>Eslab qolish</Checkbox>
                             </Form.Item>
-                            <Form.Item >
+                            <Form.Item>
                                 <Button type="primary" htmlType="submit" style={{width: '100%'}}>
-                                    Submit
+                                    Kirish
                                 </Button>
                             </Form.Item>
                         </Form>

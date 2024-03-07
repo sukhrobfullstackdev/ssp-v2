@@ -53,3 +53,9 @@
     max-height: 400px;
     min-width: 400px;
 }
+
+.imgContent {
+    justify-content: center;
+    min-width: 550px;
+    align-items: center;
+}
